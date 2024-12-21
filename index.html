@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Effort Check</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f3f3;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    h1, p {
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #f76c6c;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #f53b3b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Love Effort Feedback Form</h1>
+    <p>Let your love know how much you appreciate them and what you’d like to improve!</p>
+    <form action="https://formspree.io/f/xdkkndbl" method="post">
+      <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="partner-name">Your Partner's Name:</label>
+        <input type="text" id="partner-name" name="partner_name" placeholder="Enter your partner's name" required>
+      </div>
+      <div class="form-group">
+        <label for="effort-rating">Rate Their Effort (1-10):</label>
+        <select id="effort-rating" name="effort_rating" required>
+          <option value="">Select</option>
+          <option value="1">1 - Needs Work</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 - Average</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10 - Amazing!</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="favorite-moments">Your Favorite Moments:</label>
+        <textarea id="favorite-moments" name="favorite_moments" rows="4" placeholder="Describe the moments that made you feel loved." required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="improvements">Suggestions for Improvement:</label>
+        <textarea id="improvements" name="improvements" rows="4" placeholder="How can they make you feel even more loved?" required></textarea>
+      </div>
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+</body>
+</html>
